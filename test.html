@@ -4,15 +4,13 @@
    </head>
 <body>
    <script>
+   
+function factorial(n) {  // 定义回调函数
+  if (n == 1) {
+ return 1;        // 递归出口
+  }
+  return n * factorial(n - 1);
+}
     </script>
-  
 </body>
 </html>
-
-for(let i=1;i<arr.length;i++){
-   for(let i=0;i<arr.length-1;i++){ 
-      for(let j =0;j<arr.length-i-1;j++){  
-   for(let j=i;j>0;j--){
-      if(arr[j-1]>arr[j]){
-         [arr[j],arr[j-1]]=[arr[j],arr[j-1]]
-         yhLog.push([arr.concat(),[j,j+1]])
