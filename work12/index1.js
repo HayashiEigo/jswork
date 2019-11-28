@@ -1,5 +1,5 @@
 //获取当前年份
-let year=new Date().getFullYear()
+ year=new Date().getFullYear()
 //调用calendar函数，设置cal内容显示年历
 document.getElementById("cal").innerHTML=calendar(year)
 function setCalendar(year){
@@ -9,10 +9,15 @@ function setCalendar(year){
     var pre = year-1
     console.log(pre)
     //设置curyear
-    var pre=year
     //设置nextyear
     var next = year+1
+    console.log(pre)
     console.log(next)
-    //设置cal显示年历
- 
+    document.getElementById('curyear').setAttribute('data-year',year);
+    document.getElementById('preyear').setAttribute('data-year',pre);
+    document.getElementById('nextyear').setAttribute('data-year',next);
+    document.getElementById('curyear').innerText = year
+    document.getElementById('preyear').innerText = "<<"+pre
+    document.getElementById('nextyear').innerText = next+">>"
+    document.getElementById("cal").innerHTML = calendar(year) 
 }
