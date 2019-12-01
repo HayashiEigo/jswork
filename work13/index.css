@@ -20,7 +20,7 @@ font-size: 14px;
 .box-body th{
     font-weight: normal;
     vertical-align: top;
-    padding: 5px;
+    padding-top: 5px;
 }
 .box-body td{
     padding-top: 2px;
